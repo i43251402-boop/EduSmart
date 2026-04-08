@@ -1,0 +1,136 @@
+/* Paksa semua elemen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0c10 !important;
+  color: #ffffff !important;
+  font-family: 'Inter', Arial, sans-serif !important;
+}
+
+/* Pastikan semua teks putih */
+body, h1, h2, h3, p, a, div, section, nav, span, li, button, .card, .hero-text, .navbar, .nav-links a, .cta-button, footer {
+  color: #ffffff !important;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: #111827 !important;
+  border-bottom: 2px solid #f59e0b;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #fbbf24, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.btn-login-nav {
+  background: #f59e0b;
+  padding: 8px 20px;
+  border-radius: 30px;
+  color: #000 !important;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  padding: 60px 8%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text .highlight {
+  color: #fbbf24 !important;
+}
+
+.cta-button {
+  background: #f59e0b;
+  padding: 12px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  color: #000 !important;
+  font-weight: bold;
+}
+
+/* Animasi icon */
+.edu-icon {
+  background: #1f2937;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 32px;
+  display: inline-block;
+  margin: 10px;
+  animation: float 2s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Fitur cards */
+.features {
+  background: #111827;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 24px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #f59e0b;
+  color: #000 !important;
+}
+
+.card i {
+  font-size: 40px;
+  color: #fbbf24;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
